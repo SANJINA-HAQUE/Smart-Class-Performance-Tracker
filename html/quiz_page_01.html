@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assessment Page</title>
+  <link rel="stylesheet" href="../css/style_quiz_page_01.css">
+</head>
+<body>
+    <div class="main-wrapper">
+    <main>
+        <div class="container">
+        <div class="header-bar">
+            <button class="student-btn" type="button">Student</button>
+            <div class="top-right">
+            <span class="icon" aria-label="User" title="profile">👤</span>
+            <span class="icon" aria-label="Settings" title="settings">⚙️</span>
+            <button class="back-btn" type="button">⬅️ Back</button>
+            </div>
+        </div>
+        <h2>Hi <span>Soha</span>, Let's start the assessment selecting your course and topic. 😊</h2>
+        <div class="choose-course select-box">
+            <div class="select-row">
+            <label for="course">Choose a course</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Choose</option>
+                <option value="Web Technologies">Web Technologies</option>
+                <option value="Operating System">Operating System</option>
+                <option value="Math 04">Math 04</option>
+            </select>
+            </div>
+        </div>
+        <div class="choose-topic select-box">
+            <div class="select-row">
+            <label for="topic">Choose a topic</label>
+            <select id="topic" name="topic" required>
+                <option value="" disabled selected>Choose</option>
+                <option value="HTML">HTML</option>
+                <option value="PHP">PHP</option>
+                <option value="PL/SQL">PL/SQL</option>
+                <option value="System calls">System calls</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Matrix">Matrix</option>
+            </select>
+            </div>
+        </div>
+        <button class="start-btn" type="button">Start Assessment</button>
+        </div>
+    </main>
+    </div>
+</body>
+</html>
