@@ -37,17 +37,60 @@
                 <option value="" disabled selected>Choose</option>
                 <option value="HTML">HTML</option>
                 <option value="PHP">PHP</option>
-                <option value="PL/SQL">PL/SQL</option>
+                <option value="JavascriptL">PL/SQL</option>
                 <option value="System calls">System calls</option>
                 <option value="CSS">CSS</option>
-                <option value="Javascript">Javascript</option>
+                <option value="git">Javascript</option>
                 <option value="Matrix">Matrix</option>
             </select>
             </div>
         </div>
-        <button class="start-btn" type="button">Start Assessment</button>
-        </div>
-    </main>
+        <button class="start-btn" type="button" id="startAssessmentBtn" disabled>Start Assessment</button>
+            </div>
+        </main>
     </div>
+    <!--<script>
+    const courseSelect = document.getElementById('course');
+    const topicSelect = document.getElementById('topic');
+    const startBtn = document.getElementById('startAssessmentBtn');
+
+    function checkSelections() {
+        const courseChosen = courseSelect.value !== "";
+        const topicChosen = topicSelect.value !== "";
+        startBtn.disabled = !(courseChosen && topicChosen);
+    }
+
+    courseSelect.addEventListener('change', checkSelections);
+    topicSelect.addEventListener('change', checkSelections);
+
+    startBtn.addEventListener('click', function() {
+        let nextPage = '../html/quiz_page_02.html'; // default
+        if (courseSelect.value === "Web Technologies") {
+            switch (topicSelect.value) {
+                case "HTML":
+                    nextPage = '../html/webtech_quiz.html';
+                    break;
+                case "Javascript":
+                    nextPage = '../html/webtech_quiz.html';
+                    break;
+                case "PHP":
+                    nextPage = '../html/webtech_quiz.html';
+                    break;
+                case "CSS":
+                    nextPage = '../html/webtech_quiz.html';
+                    break;
+                case "git":
+                    nextPage = '../html/webtech_quiz.html';
+                    break;
+                default:
+                    nextPage = '../html/webtech_quiz.html';
+            }
+        } else if (courseSelect.value === "Operating System" && topicSelect.value === "System calls") {
+            nextPage = '../html/os_syscalls_assessment.html';
+        }
+        // Add more conditions as needed
+        window.location.href = nextPage;
+    });
+    </script>-->
 </body>
 </html>
